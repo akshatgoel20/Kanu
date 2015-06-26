@@ -9,21 +9,25 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /**
  * Created by NTQK0716 on 2015-06-25.
  */
 public class CategoryGridAdapter extends BaseAdapter {
 
- static Integer [] mThumbids = new Integer[]{};
-  static String [] imgtexts = new String[]{};
+ /*static Integer [] mThumbids = new Integer[]{};
+  static String [] imgtexts = new String[]{};*/
+
+    static ArrayList<Integer> mThumbIds= new ArrayList<Integer>();
+    static ArrayList<String>  imgtexts = new ArrayList<String>() ;
 
     private static LayoutInflater inflater = null;
 
     private Context mContext;
 
-    public CategoryGridAdapter(Integer[] mThumbIds,String []imgtexts){
-        this.mThumbids=mThumbIds ;
+    public CategoryGridAdapter(ArrayList<Integer> mThumbIds,ArrayList<String> imgtexts){
+        this.mThumbIds=mThumbIds ;
         this.imgtexts=imgtexts ;
 
     }
@@ -34,7 +38,7 @@ public class CategoryGridAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return mThumbids.length;
+        return mThumbIds.size();
     }
 
     @Override
@@ -72,8 +76,8 @@ public class CategoryGridAdapter extends BaseAdapter {
         holder.imageView.setPadding(8, 8, 8, 8);*/
 
 
-        holder.imageView.setImageResource(mThumbids[position]);
-        holder.tv.setText(imgtexts[position]);
+        holder.imageView.setImageResource(mThumbIds.get(position));
+        holder.tv.setText(imgtexts.get(position));
         return cellView;
     }
 

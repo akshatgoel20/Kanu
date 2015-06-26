@@ -9,12 +9,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 
 public class Category extends ActionBarActivity {
-    static Integer [] mThumbids = new Integer[]{};
-    static String [] imgtexts = new String[]{};
+    ArrayList<Integer> mThumbids= new ArrayList<>() ;
+  ArrayList<String> imgtexts = new ArrayList<>();
     TextToSpeech t1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,18 @@ public class Category extends ActionBarActivity {
         switch (pos) {
             case 1:
                 //add cases and fill the fields accordingly .
-              mThumbids={}  ;
-                imgtexts= {} ;
+              Integer []  mThumbid = {R.drawable.food, R.drawable.water,
+                      R.drawable.tv, R.drawable.stethescope,
+                      R.drawable.aeroplane, R.drawable.carrom,
+                      R.drawable.happy, R.drawable.toilet,
+                      R.drawable.myroom};
+                String [] imgtext = {"Food", "Drinks", "Fun"
+                        , "Medical", "Travel", "Games",
+                        "Emoticons", "Daily Needs", "My Room"};
+            for(int i =0;i<mThumbid.length;i++){
+                mThumbids.add(mThumbid[i]);
+                imgtexts.add(imgtext[i]);
+            }
         }
         new CategoryGridAdapter(mThumbids,imgtexts);
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -42,7 +53,7 @@ public class Category extends ActionBarActivity {
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            t1.speak(imgtexts[i], TextToSpeech.QUEUE_FLUSH, null);
+            t1.speak(imgtexts.get(i), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
