@@ -1,5 +1,6 @@
 package kanutalks.starksky.com.kanutalks;
 
+import android.content.Intent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -21,7 +22,8 @@ public class Category extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
-        Bundle bundle = new Bundle();
+        Intent in = getIntent();
+        Bundle bundle = in.getExtras();
         Integer pos = bundle.getInt("case",0);
         switch (pos) {
             case 1:
@@ -54,6 +56,7 @@ public class Category extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             t1.speak(imgtexts.get(i), TextToSpeech.QUEUE_FLUSH, null);
+
             }
         });
 
