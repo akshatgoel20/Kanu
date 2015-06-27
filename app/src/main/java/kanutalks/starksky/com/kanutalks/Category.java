@@ -28,6 +28,19 @@ public class Category extends ActionBarActivity {
         switch (pos) {
             case 0:
                 setTitle("Food");
+                Integer []  mThumbidfood = {R.drawable.food, R.drawable.water,
+                        R.drawable.tv, R.drawable.stethescope,
+                        R.drawable.aeroplane, R.drawable.carrom,
+                        R.drawable.happy, R.drawable.toilet,
+                        R.drawable.myroom};
+                String [] imgtextfood = {"Food", "Drinks", "Fun"
+                        , "Medical", "Travel", "Games",
+                        "Emoticons", "Daily Needs", "My Room"};
+                for(int i =0;i<mThumbidfood.length;i++){
+                    mThumbids.add(mThumbidfood[i]);
+                    imgtexts.add(imgtextfood[i]);
+
+                }
             case 1:
                 //add cases and fill the fields accordingly .
                 setTitle("Drinks");
@@ -70,6 +83,19 @@ public class Category extends ActionBarActivity {
                 setTitle("Daily Needs");
             case 8:
                 setTitle("My Room");
+                Integer []  mThumbidroom = {R.drawable.fanon, R.drawable.fanoff,
+                        R.drawable.onlight, R.drawable.offlight,
+                        R.drawable.cleanfloor, R.drawable.dooropen,
+                        R.drawable.doorclose, R.drawable.windowopen,
+                        R.drawable.windowclose};
+                String [] imgtextroom = {"Switch On Fan", "Switch Off Fan", "Switch On Light"
+                        , "Switch Off Light", "Clean The Floor", "Open The Door",
+                        "Close The Door", "Open Window", "Close Window"};
+                for(int i =0;i<mThumbidroom.length;i++){
+                    mThumbids.add(mThumbidroom[i]);
+                    imgtexts.add(imgtextroom[i]);
+
+                }
         }
         new CategoryGridAdapter(mThumbids,imgtexts);
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
