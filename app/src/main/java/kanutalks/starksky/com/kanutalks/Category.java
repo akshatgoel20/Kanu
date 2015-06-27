@@ -26,8 +26,11 @@ public class Category extends ActionBarActivity {
         Bundle bundle = in.getExtras();
         Integer pos = bundle.getInt("case",0);
         switch (pos) {
+            case 0:
+                setTitle("Food");
             case 1:
                 //add cases and fill the fields accordingly .
+                setTitle("Drinks");
               Integer []  mThumbid = {R.drawable.food, R.drawable.water,
                       R.drawable.tv, R.drawable.stethescope,
                       R.drawable.aeroplane, R.drawable.carrom,
@@ -39,7 +42,34 @@ public class Category extends ActionBarActivity {
             for(int i =0;i<mThumbid.length;i++){
                 mThumbids.add(mThumbid[i]);
                 imgtexts.add(imgtext[i]);
+
             }
+            case 2:
+                setTitle("Fun");
+            case 3:
+                setTitle("Medical");
+                Integer []  mThumbidmed = {R.drawable.toothache, R.drawable.runnynose,
+                        R.drawable.earpain, R.drawable.headache,
+                        R.drawable.stomachache, R.drawable.stethescope,
+                        R.drawable.cold, R.drawable.hot,
+                        R.drawable.fine};
+                String [] imgtextmed = {"Toothache", "runnynose", "earpain"
+                        , "Body Ache", "Stomach Ache", "Doctor",
+                        "Feeling cold", "Feeling hot", "I am fine"};
+                for(int i =0;i<mThumbidmed.length;i++) {
+                    mThumbids.add(mThumbidmed[i]);
+                    imgtexts.add(imgtextmed[i]);
+                }
+            case 4:
+                setTitle("Travel");
+            case 5:
+                setTitle("Games");
+            case 6:
+                setTitle("Emoticons");
+            case 7:
+                setTitle("Daily Needs");
+            case 8:
+                setTitle("My Room");
         }
         new CategoryGridAdapter(mThumbids,imgtexts);
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
@@ -55,7 +85,7 @@ public class Category extends ActionBarActivity {
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            t1.speak(imgtexts.get(i), TextToSpeech.QUEUE_FLUSH, null);
+                t1.speak(imgtexts.get(i), TextToSpeech.QUEUE_FLUSH, null);
 
             }
         });
