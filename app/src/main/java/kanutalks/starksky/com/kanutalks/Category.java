@@ -109,7 +109,19 @@ public class Category extends ActionBarActivity {
 
                 }
             case 6:
-                setTitle("Emoticons");
+                setTitle("Emotions");
+                Integer []  mThumbidemo = {R.drawable.happy, R.drawable.sad,
+                        R.drawable.love, R.drawable.angry,
+                        R.drawable.confused, R.drawable.bored,
+                        R.drawable.embarassed};
+                String [] imgtextemo = {"Happy", "Sad", "Love You"
+                        , "Angry", "Confused", "Bored",
+                        "Embarassed"};
+                for(int i =0;i<mThumbidemo.length;i++){
+                    mThumbids.add(mThumbidemo[i]);
+                    imgtexts.add(imgtextemo[i]);
+
+                }
             case 7:
                 setTitle("Daily Needs");
             case 8:
