@@ -43,26 +43,24 @@ public class Category extends ActionBarActivity {
             case 1:
                 //add cases and fill the fields accordingly .
                 setTitle("Drinks");
-              Integer []  mThumbid = {R.drawable.food, R.drawable.water,
-                      R.drawable.tv, R.drawable.stethescope,
-                      R.drawable.aeroplane, R.drawable.carrom,
-                      R.drawable.happy, R.drawable.toilet,
-                      R.drawable.myroom};
-                String [] imgtext = {"Food", "Drinks", "Fun"
-                        , "Medical", "Travel", "Games",
-                        "Emoticons", "Daily Needs", "My Room"};
-            for(int i =0;i<mThumbid.length;i++){
-                mThumbids.add(mThumbid[i]);
-                imgtexts.add(imgtext[i]);
-
-            }
-            case 2:
-                setTitle("Fun");
-                Integer []  mThumbidfun = {R.drawable.water, R.drawable.juice,
+                Integer []  mThumbiddrinks = {R.drawable.water, R.drawable.juice,
                         R.drawable.coffee, R.drawable.tea,
                         R.drawable.milk};
-                String [] imgtextfun = {"Water", "Juice", "Coffee"
+                String [] imgtextdrinks = {"Water", "Juice", "Coffee"
                         , "Tea", "Milk"};
+                for(int i =0;i<mThumbiddrinks.length;i++){
+                    mThumbids.add(mThumbiddrinks[i]);
+                    imgtexts.add(imgtextdrinks[i]);
+
+                }
+
+            case 2:
+                setTitle("Fun");
+                Integer []  mThumbidfun = {R.drawable.tv, R.drawable.videogame,
+                        R.drawable.market, R.drawable.movie,
+                        R.drawable.music,R.drawable.magazine};
+                String [] imgtextfun = {"Watch TV", "Video Game", "Market"
+                        , "Movie","Music","Magazine"};
                 for(int i =0;i<mThumbidfun.length;i++){
                     mThumbids.add(mThumbidfun[i]);
                     imgtexts.add(imgtextfun[i]);
