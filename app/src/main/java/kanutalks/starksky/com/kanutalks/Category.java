@@ -40,6 +40,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextfood[i]);
 
                 }
+                break;
             case 1:
                 //add cases and fill the fields accordingly .
                 setTitle("Drinks");
@@ -53,7 +54,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextdrinks[i]);
 
                 }
-
+                break;
             case 2:
                 setTitle("Fun");
                 Integer []  mThumbidfun = {R.drawable.tv, R.drawable.videogame,
@@ -66,6 +67,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextfun[i]);
 
                 }
+                break;
 
             case 3:
                 setTitle("Medical");
@@ -81,6 +83,7 @@ public class Category extends ActionBarActivity {
                     mThumbids.add(mThumbidmed[i]);
                     imgtexts.add(imgtextmed[i]);
                 }
+                break;
             case 4:
                 setTitle("Travel");
                 setTitle("Drinks");
@@ -94,6 +97,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtexttravel[i]);
 
                 }
+                break;
             case 5:
                 setTitle("Games");
                 Integer []  mThumbidgames = {R.drawable.swimming, R.drawable.carrom,
@@ -106,6 +110,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextgames[i]);
 
                 }
+                break;
             case 6:
                 setTitle("Emotions");
                 Integer []  mThumbidemo = {R.drawable.happy, R.drawable.sad,
@@ -120,6 +125,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextemo[i]);
 
                 }
+                break;
             case 7:
                 setTitle("Daily Needs");
                 Integer []  mThumbiddn = {R.drawable.toilet, R.drawable.bath,
@@ -135,6 +141,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextdn[i]);
 
                 }
+                break;
             case 8:
                 setTitle("My Room");
                 Integer []  mThumbidroom = {R.drawable.fanon, R.drawable.fanoff,
@@ -150,6 +157,7 @@ public class Category extends ActionBarActivity {
                     imgtexts.add(imgtextroom[i]);
 
                 }
+                break;
         }
         new CategoryGridAdapter(mThumbids,imgtexts);
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
