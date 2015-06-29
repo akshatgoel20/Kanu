@@ -124,6 +124,19 @@ public class Category extends ActionBarActivity {
                 }
             case 7:
                 setTitle("Daily Needs");
+                Integer []  mThumbiddn = {R.drawable.toilet, R.drawable.bath,
+                        R.drawable.cloth, R.drawable.nocloth,
+                        R.drawable.sleep, R.drawable.nosleep,
+                        R.drawable.brush, R.drawable.handwash,
+                        R.drawable.shoe};
+                String [] imgtextdn = {"Toilet", "Bath", "Clothes"
+                        , "Not These Clothes", "Sleep", "No Sleep",
+                        "Brush", "Hand Wash", "Shoes"};
+                for(int i =0;i<mThumbiddn.length;i++){
+                    mThumbids.add(mThumbiddn[i]);
+                    imgtexts.add(imgtextdn[i]);
+
+                }
             case 8:
                 setTitle("My Room");
                 Integer []  mThumbidroom = {R.drawable.fanon, R.drawable.fanoff,
