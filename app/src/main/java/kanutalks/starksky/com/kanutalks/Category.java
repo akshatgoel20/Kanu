@@ -28,14 +28,13 @@ public class Category extends ActionBarActivity {
         switch (pos) {
             case 0:
                 setTitle("Food");
-                Integer []  mThumbidfood = {R.drawable.food, R.drawable.water,
-                        R.drawable.tv, R.drawable.stethescope,
-                        R.drawable.aeroplane, R.drawable.carrom,
-                        R.drawable.happy, R.drawable.toilet,
-                        R.drawable.myroom};
-                String [] imgtextfood = {"Food", "Drinks", "Fun"
-                        , "Medical", "Travel", "Games",
-                        "Emoticons", "Daily Needs", "My Room"};
+                Integer []  mThumbidfood = {R.drawable.breakfast, R.drawable.lunch,
+                        R.drawable.snacks, R.drawable.fruits,
+                        R.drawable.icecream, R.drawable.custard,
+                        R.drawable.sandwiches};
+                String [] imgtextfood = {"BreakFast", "Lunch", "Snacks"
+                        , "Fruits", "Ice Cream", "Custard",
+                        "Sandwiches"};
                 for(int i =0;i<mThumbidfood.length;i++){
                     mThumbids.add(mThumbidfood[i]);
                     imgtexts.add(imgtextfood[i]);
@@ -59,6 +58,17 @@ public class Category extends ActionBarActivity {
             }
             case 2:
                 setTitle("Fun");
+                Integer []  mThumbidfun = {R.drawable.water, R.drawable.juice,
+                        R.drawable.coffee, R.drawable.tea,
+                        R.drawable.milk};
+                String [] imgtextfun = {"Water", "Juice", "Coffee"
+                        , "Tea", "Milk"};
+                for(int i =0;i<mThumbidfun.length;i++){
+                    mThumbids.add(mThumbidfun[i]);
+                    imgtexts.add(imgtextfun[i]);
+
+                }
+
             case 3:
                 setTitle("Medical");
                 Integer []  mThumbidmed = {R.drawable.toothache, R.drawable.runnynose,
