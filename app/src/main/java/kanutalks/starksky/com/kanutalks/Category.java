@@ -85,8 +85,29 @@ public class Category extends ActionBarActivity {
                 }
             case 4:
                 setTitle("Travel");
+                setTitle("Drinks");
+                Integer []  mThumbidtravel = {R.drawable.aeroplane, R.drawable.train,
+                        R.drawable.taxi, R.drawable.boat,
+                        R.drawable.mountain, R.drawable.sea};
+                String [] imgtexttravel = {"Aeroplane", "Train", "Taxi"
+                        , "Boat", "Mountain", "Sea"};
+                for(int i =0;i<mThumbidtravel.length;i++){
+                    mThumbids.add(mThumbidtravel[i]);
+                    imgtexts.add(imgtexttravel[i]);
+
+                }
             case 5:
                 setTitle("Games");
+                Integer []  mThumbidgames = {R.drawable.swimming, R.drawable.carrom,
+                        R.drawable.cards, R.drawable.videogame,
+                        R.drawable.chess};
+                String [] imgtextgames = {"Swimming", "Carrom", "Cards"
+                        , "Video Game", "Chess"};
+                for(int i =0;i<mThumbidgames.length;i++){
+                    mThumbids.add(mThumbidgames[i]);
+                    imgtexts.add(imgtextgames[i]);
+
+                }
             case 6:
                 setTitle("Emoticons");
             case 7:
