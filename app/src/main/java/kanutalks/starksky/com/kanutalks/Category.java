@@ -76,7 +76,7 @@ public class Category extends ActionBarActivity {
                         R.drawable.stomachache, R.drawable.stethescope,
                         R.drawable.cold, R.drawable.hot,
                         R.drawable.fine};
-                String [] imgtextmed = {"Toothache", "runnynose", "earpain"
+                String [] imgtextmed = {"Toothache", "Runny Nose", "Ear Pain"
                         , "Body Ache", "Stomach Ache", "Doctor",
                         "Feeling cold", "Feeling hot", "I am fine"};
                 for(int i =0;i<mThumbidmed.length;i++) {
