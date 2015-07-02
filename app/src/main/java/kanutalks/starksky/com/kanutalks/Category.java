@@ -86,7 +86,6 @@ public class Category extends ActionBarActivity {
                 break;
             case 4:
                 setTitle("Travel");
-                setTitle("Drinks");
                 Integer []  mThumbidtravel = {R.drawable.aeroplane, R.drawable.train,
                         R.drawable.taxi, R.drawable.boat,
                         R.drawable.mountain, R.drawable.sea};
@@ -179,6 +178,8 @@ public class Category extends ActionBarActivity {
         });
 
     }
+
+    //
 
 
 }
