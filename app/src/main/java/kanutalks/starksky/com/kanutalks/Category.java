@@ -158,6 +158,7 @@ public class Category extends ActionBarActivity {
                 }
                 break;
         }
+        //
         new CategoryGridAdapter(mThumbids,imgtexts);
         t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
