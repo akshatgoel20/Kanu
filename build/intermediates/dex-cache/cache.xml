@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\NTQK0716\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-aa2da8560bfa150f7e7eaeaa0f0508d409c5e5d9.jar" />
-    </item>
-    <item
-        jar="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\pre-dexed\debug\classes-4155e94b8dec22f655292779c6109f82d941af3b.jar" />
-    </item>
-    <item
-        jar="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\pre-dexed\debug\classes-e9de94caaadb1f5ae4de47f67950dc470e8a89b9.jar" />
-    </item>
-    <item
-        jar="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\Users\NTQK0716\Downloads\Kanu\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-ec55be747f3dc9e5c3b59976a9bb245e808be016.jar" />
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-242f39f6101f5b220ce434601675016d3bcb39cf.jar" />
+    </item>
+    <item
+        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-82af7b7d40a076aa264afd3b4849e5e2945f4ff0.jar" />
+    </item>
+    <item
+        jar="/Users/akshat/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-748b81b2142e3308984281488c73a43c3b887ea2.jar" />
+    </item>
+    <item
+        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-aafd78044154ac5f9a3bc4d1aa9d845d2b519350.jar" />
     </item>
 
 </items>
