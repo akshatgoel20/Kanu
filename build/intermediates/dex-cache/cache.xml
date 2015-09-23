@@ -2,20 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-aafd78044154ac5f9a3bc4d1aa9d845d2b519350.jar" />
-    </item>
-    <item
-        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-82af7b7d40a076aa264afd3b4849e5e2945f4ff0.jar" />
-    </item>
-    <item
         jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -28,6 +14,20 @@
         revision="21.1.2"
         sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
         <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-748b81b2142e3308984281488c73a43c3b887ea2.jar" />
+    </item>
+    <item
+        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-82af7b7d40a076aa264afd3b4849e5e2945f4ff0.jar" />
+    </item>
+    <item
+        jar="/Users/akshat/Downloads/Kanu/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/akshat/Downloads/Kanu/app/build/intermediates/pre-dexed/debug/classes-aafd78044154ac5f9a3bc4d1aa9d845d2b519350.jar" />
     </item>
 
 </items>
